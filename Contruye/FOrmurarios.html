@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+</head>
+<body>
+<!--
+    Código:   12
+    Objetivo: Manipular y conocer los formularios en HTML
+    Fecha:    23/09/25
+    Autor:    Albino Cano Terán
+-->
+
+    <h1>Formularios</h1>
+    <p>Un bloque dentro de una página web, cuya función principal es recolectar
+       información para ser procesada en un servidor local o remoto.</p>
+
+    <h2>Ejemplo 1</h2>
+    <form action="#">
+        Nombre: <input type="text" name="nombre"><br>
+        Apellido paterno: <input type="text" name="apaterno"><br>
+        Apellido materno: <input type="text" name="amaterno"><br>
+        Género:
+        <select name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Ejemplo 2</h2>
+    <form action="#">
+        Nombre:<br><input type="text" name="nombre"><br>
+        Apellido paterno:<br><input type="text" name="apaterno"><br>
+        Apellido materno:<br><input type="text" name="amaterno"><br>
+        Género:<br>
+        <select name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Ejemplo 3</h2>
+    <form action="#">
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre"></td>
+                <td>Apellido paterno</td>
+                <td><input type="text" name="apaterno"></td>
+                <td>Apellido materno</td>
+                <td><input type="text" name="amaterno"></td>
+            </tr>
+            <tr>
+                <td>Género</td>
+                <td>
+                    <select name="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                </td>
+                <td colspan="3"></td>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Ejemplo 4</h2>
+    <form action="#">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <label for="ap">Apellido paterno</label>
+        <input type="text" name="ap" id="ap">
+        <label for="am">Apellido materno</label>
+        <input type="text" name="am" id="am">
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad">
+        <label for="fn">Fecha de nacimiento</label>
+        <input type="date" name="fn" id="fn">
+        <label for="hn">Hora de nacimiento</label>
+        <input type="time" name="hn" id="hn">
+        <label for="email">Correo electrónico</label>
+        <input type="email" name="email" id="email">
+        <label for="redes">Redes sociales</label>
+        <input type="url" name="redes" id="redes">
+        <label for="color">Color favorito</label>
+        <input type="color" name="color" id="color">
+        <label for="sabes">¿Sabes programar?</label>
+        <input type="range" name="sabes" id="sabes">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Ejemplo 5</h2>
+    <form action="#">
+        <table border="1" width="100%" id="table">
+            <tr>
+                <td><label for="nombre2">Nombre</label></td>
+                <td><input type="text" name="nombre2" id="nombre2"></td>
+                <td><label for="ap2">Apellido paterno</label></td>
+                <td><input type="text" name="ap2" id="ap2"></td>
+                <td><label for="am2">Apellido materno</label></td>
+                <td><input type="text" name="am2" id="am2"></td>
+                <td><label for="edad2">Edad</label></td>
+                <td><input type="number" name="edad2" id="edad2"></td>
+                <td><label for="fn2">Fecha de nacimiento</label></td>
+                <td><input type="date" name="fn2" id="fn2"></td>
+            </tr>
+            <tr>
+                <td><label for="hn2">Hora de nacimiento</label></td>
+                <td><input type="time" name="hn2" id="hn2"></td>
+                <td><label for="email2">Correo electrónico</label></td>
+                <td><input type="email" name="email2" id="email2"></td>
+                <td><label for="redes2">Redes sociales</label></td>
+                <td><input type="url" name="redes2" id="redes2"></td>
+                <td><label for="color2">Color favorito</label></td>
+                <td><input type="color" name="color2" id="color2"></td>
+                <td><label for="sabes2">¿Sabes programar?</label></td>
+                <td><input type="range" name="sabes2" id="sabes2"></td>
+                <td><input type="submit" value="Enviar"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <a href="../index.html">
+        <img src="../img/link.webp" alt="Ir a la página principal" style="width:50px;height:auto;">
+    </a>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código 7</title>
+</head>
+<body>
+    <script>
+/*
+Código:    7
+Propósito: Valor de un producto con descuento
+Autor:     Albino Cano Terán
+Fecha:     23/9/2025
+*/
+
+        let nombreProd = prompt("Ingresa el nombre del producto");
+        let precio = parseFloat(prompt("Ingresa el precio del producto"));
+        let descuento = parseFloat(prompt("Ingresa el descuento"));
+        let cien = 100;
+
+        let precioConDescuento = precio - (precio * (descuento / cien));
+
+        console.log("El nombre del producto es:", nombreProd);
+        console.log("El precio es:", precio);
+        console.log("El descuento es:", descuento);
+        console.log("El precio con el descuento es:", precioConDescuento);
+
+    </script>
+    
+<a href="../index.html"><img src="../img/link.webp" alt="prog"></a>
+
+</body>
+</html>
